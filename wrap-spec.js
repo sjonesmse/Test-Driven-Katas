@@ -21,4 +21,12 @@ describe('wrap', () => {
       'Lorem ipsum dolor\nsit eu amet, elit na\nmagna sem amet nulla\nvel purus ac ligula.'
     );
   });
+
+  it('If current word length is greater than the maxLen, insert a break at the maxLen', () => {
+    expect(wrap('aaaaaaaaa', 5)).to.equal('aaaaa\naaaa');
+  });
+
+  it('If the maxLen is zero, return the line', () => {
+    expect(wrap('hello', 0)).to.equal('hello');
+  })
 });

@@ -2,7 +2,7 @@
 
 const wrap = (line, maxLen) => {
 
-    if (line.length <= maxLen) {
+    if ((line.length <= maxLen) || (maxLen === 0)) {
         return line;
     }
 
