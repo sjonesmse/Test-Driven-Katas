@@ -9,8 +9,8 @@ describe('wrap', () => {
   //check length of each line
 
   it('Breaks are at the correct spots', () => {
-    expect(wrap('dlfjslfjalfjsdf;dfdf sdfjsdfj', 10).indexOf('\n')).to.equal(
-      10
+    expect(wrap('dlfjsl fjalf jsdf;dfdf sdfjsdfj', 10).indexOf('\n')).to.equal(
+      6
     );
     expect(
       wrap(
